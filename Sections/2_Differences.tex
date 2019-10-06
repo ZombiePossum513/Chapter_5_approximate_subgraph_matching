@@ -1,0 +1,25 @@
+The empirical and the spatial networks for site A are denoted as $E_A$ and $S_A$ respectively. The first thing that we did was to see whether we could find a subgraph-isomorphism between $E_A$ and an $S_A$ produced from our spatial model. 
+\subsection{Methods}
+To achieve this, we investigated various different algorithms for determining the existence of a subgraph-isomorphism, and also outputting the mapping between the two vertex sets if the mapping exists. 
+\\\\* Amongst these algorithms were:
+\begin{itemize}
+    \item Ullmann's Algorithm \cite{Ullmann1976}
+    \item The VF \cite{cordella1999performance}, VF2 \cite{Vento2004}, VF2Plus \cite{Carletti2015}, and VF3 \cite{carletti2017introducing} algorithms
+    \item The VF2++ algorithm \cite{Juttner2018}
+\end{itemize}
+\\\\* We chose to use the VF2 algorithm as it is well-established, and has implementations in Python. 
+We plan to accomplish this by:
+\begin{enumerate}
+    \item Creating contact networks using our spatial model, as in Chapter 3.
+    \item Then we measure the "distance" between our spatial networks and the empirical networks.
+    \item We measure distance by looking at:
+    \begin{itemize}
+        \item Monomorphisms (subgraph isomorphisms)
+        \item Graph edit distance
+        \item Similarity score
+        \item RMSE between certain network metrics for empirical and spatial networks
+    \end{itemize}
+\end{enumerate}
+
+\subsection{Monomorphisms}
+We researched many different algorithms to 

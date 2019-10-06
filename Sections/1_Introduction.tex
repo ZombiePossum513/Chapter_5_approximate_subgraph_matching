@@ -1,0 +1,33 @@
+\subsection{Big picture of project}
+In this project, the big picture idea is to determine whether we can accurately and consistently produce contact networks of possum populations, using our spatial model, that are very close to empirical contact networks from the data. We refer to these empirical contact networks as \textit{empirical networks}.
+\subsection{Plan}
+We plan to accomplish this by:
+\begin{enumerate}
+    \item Creating contact networks using our spatial model, as in Chapter 3. We refer to these as \textit{spatial networks}.
+    \item Then we measure the difference between our spatial networks and the empirical networks.
+\end{enumerate}
+\textbf{How do we measure ``difference"?}
+\\ We are currently investigating three possible ways of determining how different two networks are:
+\begin{enumerate}
+    \item Graph isomorphisms and Subgraph isomorphisms,
+    \item Graph edit distance,
+    \item Difference between the two networks with respect to some network metric.
+\end{enumerate}
+
+\subsection{Definitions}
+We define two networks $G_1 = (V_1,E_1)$ and $G_2 = (V_2,E_2)$ to be \textit{isomorphic} to each other, denoted $G_1 \cong G_2$, if there exists an isomorphism $f: V_1 \to V_2$ that preserves edges. We say that $G_1$ is \textit{subgraph-isomorphic} to $G_2$ if $G_1 \cong G^{'}_2$, for $G^{'}_2 \subseteq G_2$. The \textit{graph edit distance} between $G_1$ and $G_2$ is the minimum number of edges that must be removed or inserted in order for $G_1$ and $G_2$ to be isomorphic.
+
+
+
+
+
+\subsection{Background}
+This technique has been used previously to:
+\begin{itemize}
+    \item Photos
+    \item Facial recognition
+    \item Other things...
+\end{itemize}
+
+
+

@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[english]{babel}
+\usepackage{booktabs}
+\usepackage{csquotes}
+\usepackage{sectsty}
+\usepackage{titlesec, blindtext, color,soul}
+\definecolor{gray75}{gray}{0.75}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+\usepackage{graphicx}
+\usepackage{media9}
+\usepackage[justification=centering]{caption}
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\usepackage{subcaption}
+% \captionsetup[figure]{font=small,skip=0pt}
+\usepackage{lscape}
+\usepackage{ascii}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{a4paper, left=22mm, right=22mm, top=20mm, bottom=20mm}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage[capitalise]{cleveref}
+\usepackage{bbm}
+\newtheorem{theorem}{Theorem}
+\usepackage{setspace}
+\usepackage{enumerate}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{csvsimple}
+\renewcommand{\arraystretch}{1.3}
+% \usepackage{cite}
+\sectionfont{\large}
+\subsectionfont{\normalsize}
+
+\usepackage{mwe}
+\usepackage{wrapfig}
+
+\title{Approximate Subgraph Matching}
+\author{Stephen Merry}
+\date{\today}
+  \onehalfspacing
+\linespread{2}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction} \label{Introduction}
+\input{Sections/1_Introduction.tex}
+
+\section{Measures of difference} \label{Differences}
+\input{Sections/2_Differences.tex}
+
+\bibliographystyle{plain}
+\bibliography{Chapter_5_bibliography}
+\end{document}
